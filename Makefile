@@ -2,15 +2,15 @@ install:
 	@poetry install
 
 test:
-	poetry run pytest hexlet_python_package tests
+	poetry run pytest brain_games tests
 
 lint:
-	poetry run flake8 hexlet_python_package
+	poetry run flake8 brain_games
 
 selfcheck:
 	poetry check
 
-check: selfcheck test lint
+check: selfcheck lint
 
 build: check
 	@poetry build
