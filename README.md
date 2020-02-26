@@ -9,4 +9,7 @@
 
 [![Build Status](https://travis-ci.org/sinist3rr/python-project-lvl1.svg?branch=master)](https://travis-ci.org/sinist3rr/python-project-lvl1)
 
-### Установка и запуск
+### Установка и запуск brain-even
+
+[asciinema](https://asciinema.org/a/L4KeGB8RhkHt1mqAJgxVGsnYQ)
+
