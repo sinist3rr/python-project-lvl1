@@ -3,6 +3,7 @@ import prompt
 from brain_games.games.even import even_check
 from brain_games.games.calc import calc_check
 from brain_games.games.gcd import gcd_check
+from brain_games.games.progression import progression_check
 from brain_games.cli import welcome_user
 
 
@@ -17,6 +18,8 @@ def game_banner(game):
         print('What is the result of the expression?\n')
     elif game == 'gcd':
         print('Find the greatest common divisor of given numbers.\n')
+    elif game == 'progression':
+        print('What number is missing in the progression?\n')
 
 
 def show_question(random):
@@ -41,6 +44,8 @@ def game_engine(game_name):
             (random_entity, correct_answer) = calc_check()
         elif game_name == 'gcd':
             (random_entity, correct_answer) = gcd_check()
+        elif game_name == 'progression':
+            (random_entity, correct_answer) = progression_check()
         show_question(random_entity)
         user_answer = prompt.string('Your answer: ')
         if user_answer == correct_answer:
