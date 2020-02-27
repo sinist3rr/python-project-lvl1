@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "sinist3rr_brain_games"
-version = "0.10.0"
+version = "0.11.0"
 description = ""
 authors = ["sinist3rr <darkfloki@protonmail.com>"]
 packages = [
