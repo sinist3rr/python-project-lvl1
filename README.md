@@ -1,6 +1,6 @@
 #  Проект "Игры разума"
 
-Здесь будет какой-нибудь текст 
+Погружение в экосистему Python
 
 ---
 [![Maintainability](https://api.codeclimate.com/v1/badges/811f8bef0daed62f80f8/maintainability)](https://codeclimate.com/github/sinist3rr/python-project-lvl1/maintainability)
