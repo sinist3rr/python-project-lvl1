@@ -10,6 +10,7 @@
 
 - [brain-even](https://asciinema.org/a/L4KeGB8RhkHt1mqAJgxVGsnYQ)
 - [brain-calc](https://asciinema.org/a/7PrWdHnP5Py2JSWtn1vGFVKGD)
+- [brain-gcd](https://asciinema.org/a/20HjMjyq5YDQMYFv3kb4UnN8Q)
 
 ### Команды
 Для установки пакета можно использовать команду:
