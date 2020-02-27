@@ -12,6 +12,7 @@
 - [brain-calc](https://asciinema.org/a/7PrWdHnP5Py2JSWtn1vGFVKGD)
 - [brain-gcd](https://asciinema.org/a/20HjMjyq5YDQMYFv3kb4UnN8Q)
 - [brain-progression](https://asciinema.org/a/PqbqTcWiHStzyNcACkQsSGGMo)
+- [brain-prime](https://asciinema.org/a/JfzGf65q5f9U3YK7800NMRqSM)
 
 ### Команды
 Для установки пакета можно использовать команду:
