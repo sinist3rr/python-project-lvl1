@@ -36,22 +36,15 @@ def game_finish(user_name):
     return
 
 
-def game_engine(game_name):
+def game_engine(game_name, game_index):
+    games = (even_check, calc_check, gcd_check, progression_check, prime_check)
+    generate_question = games[game_index]
     greet()
     game_banner(game_name)
     user_name = welcome_user()
     game_round = 1
     while (game_round <= 3):
-        if game_name == 'even':
-            (random_entity, correct_answer) = even_check()
-        elif game_name == 'calc':
-            (random_entity, correct_answer) = calc_check()
-        elif game_name == 'gcd':
-            (random_entity, correct_answer) = gcd_check()
-        elif game_name == 'progression':
-            (random_entity, correct_answer) = progression_check()
-        elif game_name == 'prime':
-            (random_entity, correct_answer) = prime_check()
+        random_entity, correct_answer = generate_question()
         show_question(random_entity)
         user_answer = prompt.string('Your answer: ')
         if user_answer == correct_answer:
