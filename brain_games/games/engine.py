@@ -22,7 +22,7 @@ def game_banner(game):
     elif game == 'progression':
         print('What number is missing in the progression?\n')
     elif game == 'prime':
-        print('Answer "yes" if given number is prime.' +
+        print('Answer "yes" if given number is prime. ' +
               'Otherwise answer "no".\n')
 
 
