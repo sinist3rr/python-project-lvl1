@@ -1,20 +1,21 @@
-#!/usr/bin/env python3
 from random import randint
 
 
-def prime_check():
-    random_number = randint(1, 100)
-    i = random_number - 1
+RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".\n'
+
+
+def is_prime(number):
+    i = number - 1
     while (i > 1):
-        if (random_number % i == 0):
-            return (str(random_number), 'no')
+        if (number % i == 0):
+            return False
         i -= 1
-    return (str(random_number), 'yes')
+    return True
 
 
-def main():
-    prime_check()
-
-
-if __name__ == '__main__':
-    main()
+def check():
+    random_number = randint(1, 100)
+    if is_prime(random_number):
+        return (str(random_number), 'yes')
+    elif not is_prime(random_number):
+        return (str(random_number), 'no')

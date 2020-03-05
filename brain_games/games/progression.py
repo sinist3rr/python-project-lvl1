@@ -1,28 +1,27 @@
-#!/usr/bin/env python3
 from random import randint
 
 
-def progression_check():
-    random_step = randint(1, 10)
-    random_start = randint(1, 10)
-    random_hide = randint(1, 10)
+RULE = 'What number is missing in the progression?\n'
+
+
+def progression_find(step, start, hide):
     i = 1
-    current = random_start
+    current = start
     complete_string = ''
     while (i <= 10):
-        if i == random_hide:
+        if i == hide:
             complete_string += '..' + ' '
             hided_number = current
         else:
             complete_string += str(current) + ' '
         i += 1
-        current += random_step
+        current += step
     return (complete_string[:-1], str(hided_number))
 
 
-def main():
-    progression_check()
-
-
-if __name__ == '__main__':
-    main()
+def check():
+    random_step = randint(1, 10)
+    random_start = randint(1, 10)
+    random_hide = randint(1, 10)
+    result = progression_find(random_step, random_start, random_hide)
+    return result

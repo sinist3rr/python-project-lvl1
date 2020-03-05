@@ -1,21 +1,20 @@
-#!/usr/bin/env python3
 from random import randint
 
 
-def gcd_check():
+RULE = 'Find the greatest common divisor of given numbers.\n'
+
+
+def gcd_find(number1, number2):
+    while (number1 % number2 > 0):
+        remainder = number1 % number2
+        number1 = number2
+        number2 = remainder
+    return number2
+
+
+def check():
     random_number1 = randint(1, 100)
     random_number2 = randint(1, 100)
     complete_string = (str(random_number1) + ' ' + str(random_number2))
-    while (random_number1 % random_number2 > 0):
-        remainder = random_number1 % random_number2
-        random_number1 = random_number2
-        random_number2 = remainder
-    return (complete_string, str(random_number2))
-
-
-def main():
-    gcd_check()
-
-
-if __name__ == '__main__':
-    main()
+    result = gcd_find(random_number1, random_number2)
+    return (complete_string, str(result))
