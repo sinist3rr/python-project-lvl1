@@ -1,2 +1,2 @@
 exclude_patterns:
-- "games/"
+- "brain_games/games/"
