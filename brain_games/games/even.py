@@ -1,4 +1,4 @@
-from brain_games.answer_checker import run
+from random import randint
 
 
 RULE = 'Answer "yes" if number even otherwise answer "no".'
@@ -12,4 +12,5 @@ def is_even(number):
 
 
 def check():
-    return run(is_even)
+    number = randint(1, 99)
+    return str(number), 'yes' if is_even(number) else 'no'
