@@ -8,12 +8,10 @@ def greet():
 
 def show_question(random):
     print("Question: {}".format(random))
-    return
 
 
 def game_finish(user_name):
     print("Congratulations, {}!".format(user_name))
-    return
 
 
 def run(game_module):
