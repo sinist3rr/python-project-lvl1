@@ -13,6 +13,6 @@ def check():
                      (sub(random_number1, random_number2), '-'),
                      (mul(random_number1, random_number2), '*'))
     result, random_sign = choice(signs_and_ops)
-    complete_string = ('{} {} {}'.format(str(random_number1),
-                       random_sign, str(random_number2)))
+    complete_string = ('{} {} {}'.format(random_number1,
+                       random_sign, random_number2))
     return (complete_string, str(result))
