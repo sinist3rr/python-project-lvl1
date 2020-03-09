@@ -1,7 +1,7 @@
 from brain_games.answer_checker import run
 
 
-RULE = 'Answer "yes" if number even otherwise answer "no".\n'
+RULE = 'Answer "yes" if number even otherwise answer "no".'
 
 
 def is_even(number):

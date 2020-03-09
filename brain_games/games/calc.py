@@ -2,7 +2,7 @@ from random import randint
 from random import choice
 
 
-RULE = 'What is the result of the expression?\n'
+RULE = 'What is the result of the expression?'
 
 
 def calculate(number1, sign, number2):

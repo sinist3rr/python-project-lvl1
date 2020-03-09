@@ -1,7 +1,7 @@
 from random import randint
 
 
-RULE = 'Find the greatest common divisor of given numbers.\n'
+RULE = 'Find the greatest common divisor of given numbers.'
 
 
 def gcd_find(number1, number2):

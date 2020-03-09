@@ -1,7 +1,7 @@
 from brain_games.answer_checker import run
 
 
-RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".\n'
+RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(number):

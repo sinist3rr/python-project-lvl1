@@ -1,7 +1,7 @@
 from random import randint
 
 
-RULE = 'What number is missing in the progression?\n'
+RULE = 'What number is missing in the progression?'
 
 
 def progression_find(step, start, hide):

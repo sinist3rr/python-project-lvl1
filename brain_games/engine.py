@@ -17,6 +17,7 @@ def game_finish(user_name):
 def run(game_module):
     greet()
     print(game_module.RULE)
+    print()
     user_name = welcome_user()
     game_round = 1
     while (game_round <= 3):
