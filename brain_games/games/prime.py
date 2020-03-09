@@ -1,4 +1,4 @@
-from brain_games.answer_checker import run
+from random import randint
 
 
 RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
@@ -14,4 +14,5 @@ def is_prime(number):
 
 
 def check():
-    return run(is_prime)
+    number = randint(1, 100)
+    return str(number), 'yes' if is_prime(number) else 'no'
